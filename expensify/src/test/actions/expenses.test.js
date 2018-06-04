@@ -23,7 +23,7 @@ test('should add expense action object', () => {
         description: 'Rent',
         amount: 10950,
         createdAt: 1000,
-        notes: 'This was last month rent'
+        note: 'This was last month rent'
     };
     const action = addExpense(expenseData);
     expect(action).toEqual({
@@ -42,7 +42,7 @@ test('should add expense action object with default values', () => {
         expense: {
             id: expect.any(String),
             description: '',
-            notes: '',
+            note: '',
             amount: 0,
             createdAt: 0
         }
